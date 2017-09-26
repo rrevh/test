@@ -15,6 +15,8 @@ RUN mkdir ${PENTAHO_HOME} && \
     useradd -s /bin/bash -d ${PENTAHO_HOME} -r -g pentaho pentaho && \
     chown pentaho:pentaho ${PENTAHO_HOME}
 
+RUN mkdir ${PENTAHO_HOME}/repo
+
 # Add files
 #RUN mkdir $PENTAHO_HOME/docker-entrypoint.d 
 
